@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pizarron</title>
+    <link rel="stylesheet" href="../pizarron/css/styles_escribir.css">
+  </head>
+  <body>
+    <main class="main-container">
+      <div>
+        <canvas id="main-canvas" width="1000" height="700""></canvas>
+      
+    </main>
+    <div>
+      <a href="../pizarron/pizarron.html">
+        <i></i>
+        <i></i>
+        <span id="play-span-borrar_trazo">Borrar trazos</span>
+      </a>
+      <audio id="audio-borrar_trazo" controls style="display: none;">
+        <source src="audio/borrar_trazo.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+      </div>
+    <script src="../pizarron/js/escribir.js"></script>
+    <script>
+      const playHeaderBorrarTrazo = document.getElementById("play-span-borrar_trazo");
+        const audioBorrarTrazo = document.getElementById("audio-borrar_trazo");
+
+        playHeaderBorrarTrazo.addEventListener("mouseover", function () {
+            audioBorrarTrazo.play();
+        });
+    </script>
+
+  </body>
+  </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lectura/css/style.css">
+    <title>Lectura</title>
+</head>
+<body>
+    <h1 id="play_header_videojuegos">Videojuegos</h1>
+    <audio id="audio-videojuegos" controls style="display: none;">
+        <source src="../lectura/audio/videojuegos.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+        <a href="../memorama/memorama.html">
+    <img id="play-header-memorama" style="border: 10px solid; color: orange;" src="../lectura/img/Memorama.jpeg" alt="" width="130" height="130" />
+    <audio id="audio-memorama" controls style="display: none;">
+        <source src="../lectura/audio/memorama.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+        </a>      
+        <a href="../Sopa de letras/index.html">
+    <img id="play-header-sopa_de_letras" style="border: 10px solid; color: orange;" src="../lectura//img/ABC.png" alt="" width="130" height="130" />
+    <audio id="audio-sopa_de_letras" controls style="display: none;">
+        <source src="../lectura/audio/sopa_de_letras.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+        </a> 
+        <script>
+            const playHeaderMemorama = document.getElementById("play-header-memorama");
+            const audioMemorama = document.getElementById("audio-memorama");
+        
+            playHeaderMemorama.addEventListener("mouseover", function () {
+                audioMemorama.play();
+            });
+        
+            const playHeaderSopa_de_letras = document.getElementById("play-header-sopa_de_letras");
+            const audioSopa_de_letras = document.getElementById("audio-sopa_de_letras");
+        
+            playHeaderSopa_de_letras.addEventListener("mouseover", function () {
+                audioSopa_de_letras.play();
+            });
+        
+            const playHeaderVideojuegos = document.getElementById("play_header_videojuegos");
+            const audioVideojuegos = document.getElementById("audio-videojuegos");
+        
+            playHeaderVideojuegos.addEventListener("mouseover", function () {
+                audioVideojuegos.play();
+            });
+        </script>
+</body>
+</html>

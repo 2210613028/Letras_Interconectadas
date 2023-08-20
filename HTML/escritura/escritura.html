@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../escritura/css/style.css">
+    <title>Escritura</title>
+</head>
+<body>
+    <h1 id="play_header_videojuegos">Videojuegos</h1>
+    <audio id="audio-videojuegos" controls style="display: none;">
+        <source src="../escritura/audio/videojuegos.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+        <a href="../pizarron/pizarron.html">
+    <img id="play-header-pizarron" style="border: 10px solid; color: orange;" src="../escritura/img/pizarron.png" alt="" width="130" height="130" />
+        <audio id="audio-pizarron" controls style="display: none;">
+            <source src="../escritura/audio/pizarron.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+        </a>      
+        <a href="../crucigrama/index.html">
+    <img id="play-header-crucigrama" style="border: 10px solid; color: orange;" src="../escritura/img/crucigrama.png" alt="" width="130" height="130" />
+    <audio id="audio-crucigrama" controls style="display: none;">
+        <source src="../escritura/audio/crucigrama.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+        </a>
+
+        <script>
+            const playHeaderVideojuegos = document.getElementById("play_header_videojuegos");
+            const audioVideojuegos = document.getElementById("audio-videojuegos");
+        
+            playHeaderVideojuegos.addEventListener("mouseover", function () {
+                audioVideojuegos.play();
+            });
+
+            const playHeaderPizarron = document.getElementById("play-header-pizarron");
+            const audioPizarron = document.getElementById("audio-pizarron");
+        
+            playHeaderPizarron.addEventListener("mouseover", function () {
+                audioPizarron.play();
+            });
+
+            const playHeaderCrucigrama = document.getElementById("play-header-crucigrama");
+            const audioCrucigrama = document.getElementById("audio-crucigrama");
+        
+            playHeaderCrucigrama.addEventListener("mouseover", function () {
+                audioCrucigrama.play();
+            });
+        </script>
+        
+</body>
+</html>

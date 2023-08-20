@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../menu/css/style_menu.css">
+	<title>xtámbi̱ni̱</title>
+
+	<style>
+			a:link{color:white; background-color:transparent; text-decoration:none;}
+
+			a:visited{color:white; background-color:transparent; text-decoration:none;}
+
+			a:hover{color:White; background-color:transparent; text-decoration:underline;}
+
+			a:active{color:white; background-color:transparent; text-decoration:underline;}
+
+
+		</style>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<section class="lec">
+            <h1 id="play-header-otomi1"><a href="../lectura otomi/lectura.html">i̱xō̱k'āni̱</a></h1>
+            <audio id="audio-otomi1" controls style="display: none;">
+                <source src="../menu otomi/audio/otomi1.mp3" type="audio/mpeg">
+                Nts'úna nts'úna quk'wi̱ts'ùni̱ xāmbā..
+            </audio>
+        </section>
+
+        <section class="esc">
+            <h1 id="play-header-otomi2"><a href="../escritura otomi/escritura.html">nk'iyu̱</a></h1>
+            <audio id="audio-otomi2" controls style="display: none;">
+                <source src="../menu otomi/audio/otomi2.mp3" type="audio/mpeg">
+                Nts'úna nts'úna quk'wi̱ts'ùni̱ xāmbā.
+            </audio>
+        </section>
+
+		<section class="com">
+			<h1 id="play-header-otomi3"><a href="../comprensión/comprensión.php">mba̱ts'a̱ni̱</a></h1>
+			<audio id="audio-otomi3" controls style="display: none;">
+                <source src="../menu otomi/audio/otomi3.mp3" type="audio/mpeg">
+                Nts'úna nts'úna quk'wi̱ts'ùni̱ xāmbā.
+            </audio>
+		</section>
+
+		<section class="red">
+			<h1 id="play-header-otomi4"><a href="../Redacción/Redacción.php">k'ūts'úni̱</a></h1>
+			<audio id="audio-otomi4" controls style="display: none;">
+                <source src="../menu otomi/audio/otomi4.mp3" type="audio/mpeg">
+                Nts'úna nts'úna quk'wi̱ts'ùni̱ xāmbā.
+            </audio>
+		</section>
+
+	</div>
+
+	<script>
+        const playHeaderOtomi1 = document.getElementById("play-header-otomi1");
+        const audioOtomi1 = document.getElementById("audio-otomi1");
+
+        playHeaderOtomi1.addEventListener("mouseover", function () {
+            audioOtomi1.play();
+        });
+
+        const playHeaderOtomi2 = document.getElementById("play-header-otomi2");
+        const audioOtomi2 = document.getElementById("audio-otomi2");
+
+        playHeaderOtomi2.addEventListener("mouseover", function () {
+            audioOtomi2.play();
+        });
+
+        const playHeaderOtomi3 = document.getElementById("play-header-otomi3");
+        const audioOtomi3 = document.getElementById("audio-otomi3");
+
+        playHeaderOtomi3.addEventListener("mouseover", function () {
+            audioOtomi3.play();
+        });
+
+        const playHeaderOtomi4 = document.getElementById("play-header-otomi4");
+        const audioOtomi4 = document.getElementById("audio-otomi4");
+
+        playHeaderOtomi4.addEventListener("mouseover", function () {
+            audioOtomi4.play();
+        });
+
+    </script>
+
+</body>
+</html>

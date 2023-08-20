@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial=scale=1.0">
+		<title>Formulario login</title>
+		<link rel="stylesheet" href="../bienvenida/css/style_inicio.css">
+		<link rel="stylesheet" href="../bienvenida/css/style_index.css">
+	</head>
+
+	<body>
+		<section class="left-form">
+			
+		</section>
+
+		<section class="right-form">
+			<form action="" method="post">
+
+				<section id="play-section-bienvenido">
+					<h2 id="welcomeMessage">Bienvenidos</h2>
+					<audio id="audio-bienvenido" controls style="display: none;">
+						<source src="../bienvenida/audio/bienvenido.mp3" type="audio/mpeg">
+						Tu navegador no soporta la reproducción de audio.
+					</audio>
+				</section>
+				<br>
+				<div id="header">Letras Interconectadas</div>
+    			<div id="subheader">Por favor escoja su idioma</div>
+				<br>
+				<br>
+				<div class="container">
+					<a href="..//menu otomi/menu.html" style="--color: #F556B5"><span id="play-span-otomi">Hñähñu</span><i></i></a>
+					<audio id="audio-otomi" controls style="display: none;">
+					<source src="../bienvenida/audio/otomi.mp3" type="audio/mpeg">
+					Tu navegador no soporta la reproducción de audio.
+				</audio>
+					<a href="../menu/menu.html" style="--color: #71C6F2"><span id="play-span-español">Español</span><i></i></a>
+				<audio id="audio-español" controls style="display: none;">
+					<source src="../bienvenida/audio/español.mp3" type="audio/mpeg">
+					Tu navegador no soporta la reproducción de audio.
+				</audio>
+					<a href="../menu náhuatl/menu.html" style="--color: #FFCB3A"><span id="play-span-nahuatl">Náhuatl</span><i></i></a>
+					<audio id="audio-nahuatl" controls style="display: none;">
+					<source src="../bienvenida/audio/nahuatl.mp3" type="audio/mpeg">
+					Tu navegador no soporta la reproducción de audio.
+				</audio>
+				  </div>
+   			 	<script src="../bienvenida/js/script.js"></script>
+					<script>
+
+						const playHeaderBienvenido = document.getElementById("play-section-bienvenido");
+						const audioBienvenido = document.getElementById("audio-Bienvenido");
+		
+						playHeaderBienvenido.addEventListener("mouseover", function () {
+							audioBienvenido.play();
+						});
+
+						const playHeaderOtomi = document.getElementById("play-span-otomi");
+						const audioOtomi = document.getElementById("audio-otomi");
+		
+						playHeaderOtomi.addEventListener("mouseover", function () {
+							audioOtomi.play();
+						});
+		
+						const playHeaderEspañol = document.getElementById("play-span-español");
+						const audioEspañol = document.getElementById("audio-español");
+		
+						playHeaderEspañol.addEventListener("mouseover", function () {
+							audioEspañol.play();
+						});
+
+						const playHeaderNahuatl = document.getElementById("play-span-nahuatl");
+						const audioNahuatl = document.getElementById("audio-nahuatl");
+		
+						playHeaderNahuatl.addEventListener("mouseover", function () {
+							audioNahuatl.play();
+						});
+					</script>
+			</form>
+		</section>
+	</body>	
+
+
+</html>

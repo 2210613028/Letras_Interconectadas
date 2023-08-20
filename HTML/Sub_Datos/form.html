@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario_Proyecto</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../Sub_Datos/css/estilos.css">
+
+  </head>
+  <body>
+    <form class="formulario" action="../comprensión/new_ejer.php" method="POST" class="input-group" enctype="multipart/form-data">
+    <h1>Arega un nuevo ejercicio</h1>
+    
+      <div class="contenedor">
+
+<!-- Nombre del proyecto -->
+        <div class="input-contenedor">
+          <i class="fas fa-clipboard icon"></i>
+          <input type="text" name="nombre" class="input-field" placeholder="Nombre del ejercicio" required>
+        </div>
+<!-- Nombre del lider -->
+        <div class="input-contenedor">
+           <i class="fas fa-user icon"></i>
+           <input type="text" id="referencias" name="referencias" class="input-field" placeholder="Autor y/o referencia" required>
+        </div>
+        <!-- ID Carrera -->
+        <div class="input-contenedor">
+          <i class="fas fa-id-card icon"></i>
+          <select class="form-select" name="especialidad" id="especialidad" required>
+           <option value="1">Comprensión</option>
+           <option value="2">Redacción</option>
+          </select>
+       </div>
+
+<!-- Subir Documentación -->
+        <div class="input-contenedor" style="height: 50px; display: flex; align-items: center;">
+          <i class="fas fa-file icon"></i>
+          <label for="documentacion" style="margin-right: 165px;">Documentación</label>
+          <input type="file" id="archivo" name="archivo" required>
+        </div>
+      </div>
+      
+<!-- Botón enviar -->
+    <div class="button-container" style="display: flex;justify-content: space-between; width: 493px;">
+        <input type="reset" value="Cancelar" onclick="document.location='../comprensión/comprensión.php'" class="button">
+        <input type="submit" value="Subir" class="button">
+    </div>
+    </form>
+
+
+
+    
+</body>
+</html>

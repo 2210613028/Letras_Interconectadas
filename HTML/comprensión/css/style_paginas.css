@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(imagen.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header h2 {
+    margin: 0;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer button {
+    padding: 8px 16px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .back-btn {
+    background-color: #4CAF50;
+  }
+  
+  .add-project-btn {
+    background-color: #4CAF50;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .progreso-input {
+    width: 50%;
+  }
+  a:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: purple;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: green;
+    text-decoration: underline;
+  }
+  .footer-link:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  .footer-link:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  table a:link {
+    color: rgb(0, 0, 0); /* Cambia el color según tus preferencias */
+    text-decoration: none;
+  }
+  
+  table a:visited {
+    color: rgb(0, 0, 0); /* Cambia el color según tus preferencias */
+    text-decoration: none;
+  }
+  
+  table a:hover {
+    color: rgb(12, 12, 231); /* Cambia el color según tus preferencias */
+    text-decoration: underline;
+  }
+  
+  table a:active {
+    color: rgb(12, 12, 231); /* Cambia el color según tus preferencias */
+    text-decoration: underline;
+  }
+  

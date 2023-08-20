@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../menu/css/style_menu.css">
+	<title>Menu</title>
+
+	<style>
+			a:link{color:white; background-color:transparent; text-decoration:none;}
+
+			a:visited{color:white; background-color:transparent; text-decoration:none;}
+
+			a:hover{color:White; background-color:transparent; text-decoration:underline;}
+
+			a:active{color:white; background-color:transparent; text-decoration:underline;}
+
+
+		</style>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<section class="lec">
+            <h1 id="play-header-lectura"><a href="../lectura/lectura.html">Lectura</a></h1>
+            <audio id="audio-lectura" controls style="display: none;">
+                <source src="../menu/audio/lectura.mpeg" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+        </section>
+
+        <section class="esc">
+            <h1 id="play-header-escritura"><a href="../escritura/escritura.html">Escritura</a></h1>
+            <audio id="audio-escritura" controls style="display: none;">
+                <source src="../menu/audio/escritura.mpeg" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+        </section>
+
+		<section class="com">
+			<h1 id="play-header-comprension"><a href="../comprensión/comprensión.php">Comprensión</a></h1>
+			<audio id="audio-comprension" controls style="display: none;">
+                <source src="../menu/audio/comprension.mpeg" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+		</section>
+
+		<section class="red">
+			<h1 id="play-header-redaccion"><a href="../Redacción/Redacción.php">Redacción</a></h1>
+			<audio id="audio-redaccion" controls style="display: none;">
+                <source src="../menu/audio/redaccion.mpeg" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+		</section>
+
+	</div>
+
+	<script>
+        const playHeaderLectura = document.getElementById("play-header-lectura");
+        const audioLectura = document.getElementById("audio-lectura");
+
+        playHeaderLectura.addEventListener("mouseover", function () {
+            audioLectura.play();
+        });
+
+        const playHeaderEscritura = document.getElementById("play-header-escritura");
+        const audioEscritura = document.getElementById("audio-escritura");
+
+        playHeaderEscritura.addEventListener("mouseover", function () {
+            audioEscritura.play();
+        });
+
+        const playHeaderComprension = document.getElementById("play-header-comprension");
+        const audioComprension = document.getElementById("audio-comprension");
+
+        playHeaderComprension.addEventListener("mouseover", function () {
+            audioComprension.play();
+        });
+
+        const playHeaderRedaccion = document.getElementById("play-header-redaccion");
+        const audioRedaccion = document.getElementById("audio-redaccion");
+
+        playHeaderRedaccion.addEventListener("mouseover", function () {
+            audioRedaccion.play();
+        });
+
+    </script>
+
+</body>
+</html>

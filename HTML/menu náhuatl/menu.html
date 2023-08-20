@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nah">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../menu/css/style_menu.css">
+    <title>Tlachiyotlakatl</title>
+
+    <style>
+            a:link{color:white; background-color:transparent; text-decoration:none;}
+
+            a:visited{color:white; background-color:transparent; text-decoration:none;}
+
+            a:hover{color:White; background-color:transparent; text-decoration:underline;}
+
+            a:active{color:white; background-color:transparent; text-decoration:underline;}
+
+
+        </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section class="lec">
+            <h1 id="play-header-nahuatl1"><a href="../lectura náhuatl/lectura.html">Tlahtolli</a></h1>
+            <audio id="audio-nahuatl1" controls style="display: none;">
+                <source src="../menu náhuatl/audio/nahuatl1.mp3" type="audio/mpeg">
+                Tozcacuīcāyotl tlatlāchīuh. 
+            </audio>
+        </section>
+
+        <section class="esc">
+            <h1 id="play-header-nahuatl2"><a href="../escritura náhuatl/escritura.html">Tlācēlōtl</a></h1>
+            <audio id="audio-nahuatl2" controls style="display: none;">
+                <source src="../menu náhuatl/audio/nahuatl2.mp3" type="audio/mpeg">
+                Tozcacuīcāyotl tlatlāchīuh.
+            </audio>
+        </section>
+
+        <section class="com">
+            <h1 id="play-header-nahuatl3"><a href="#">Ompahtikan</a></h1>
+            <audio id="audio-nahuatl3" controls style="display: none;">
+                <source src="../menu náhuatl/audio/nahuatl3.mp3" type="audio/mpeg">
+                Tozcacuīcāyotl tlatlāchīuh.
+            </audio>
+        </section>
+
+        <section class="red">
+            <h1 id="play-header-nahuatl4"><a href="#">Tlāxīlōtl</a></h1>
+            <audio id="audio-nahuatl4" controls style="display: none;">
+                <source src="../menu náhuatl/audio/nahuatl4.mp3" type="audio/mpeg">
+                Tozcacuīcāyotl tlatlāchīuh.
+            </audio>
+        </section>
+
+    </div>
+
+    <script>
+        const playHeaderNahuatl1 = document.getElementById("play-header-nahuatl1");
+        const audioNahuatl1 = document.getElementById("audio-nahuatl1");
+
+        playHeaderNahuatl1.addEventListener("mouseover", function () {
+            audioNahuatl1.play();
+        });
+
+        const playHeaderNahuatl2 = document.getElementById("play-header-nahuatl2");
+        const audioNahuatl2 = document.getElementById("audio-nahuatl2");
+
+        playHeaderNahuatl2.addEventListener("mouseover", function () {
+            audioNahuatl2.play();
+        });
+
+        const playHeaderNahuatl3 = document.getElementById("play-header-nahuatl3");
+        const audioNahuatl3 = document.getElementById("audio-nahuatl3");
+
+        playHeaderNahuatl3.addEventListener("mouseover", function () {
+            audioNahuatl3.play();
+        });
+
+        const playHeaderNahuatl4 = document.getElementById("play-header-nahuatl4");
+        const audioNahuatl4 = document.getElementById("audio-nahuatl4");
+
+        playHeaderNahuatl4.addEventListener("mouseover", function () {
+            audioNahuatl4.play();
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	font-family: "Montserrat", sans-serif;
+}
+
+.container{
+	height: 100vh;
+	display: flex;
+}
+
+section{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	transition: all .5s;
+}
+
+section:hover{
+	flex: 2;
+}
+
+section h1{
+	background:rgba(0, 0, 0, 0.6);
+	color: white;
+	padding: 12px 32px;
+}
+
+.lec{
+	background: url('../img/lectura.jpg');
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: multiply;
+}
+
+.esc{
+  background:url('../img/escritura.jpg');
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.com{
+  background:url('../img/comprension.jpg');
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.red{
+  background:url('../img/redaccion.jpg');
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
