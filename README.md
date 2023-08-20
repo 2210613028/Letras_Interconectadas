@@ -1,4 +1,4 @@
-# Letras_Interconectadas
+# Letras Interconectadas
 
 Este repositorio alberga el proyecto "Letras Interconectadas", una iniciativa destinada a derribar las barreras de la comunicación y el acceso a la información para las comunidades indígenas y analfabetas del hermoso estado de Querétaro. A través de la digitalización y la tecnología, nuestro equipo se esfuerza por brindar un acceso más sencillo y significativo al conocimiento, la educación y la cultura.
 
